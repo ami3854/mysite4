@@ -27,8 +27,8 @@ h4{
 
 .header{
   position: fixed;
-  top: 0;
-  left: 5%;
+  inset: 0;
+  margin: 0 auto;
   height: 200px;
   justify-content: space-between;
   align-items: center;
@@ -78,7 +78,7 @@ ul li{
   height: 100%;
   top: 0;
   left: 0;
-  background-color:blanchedalmond;
+  background-color:rgb(255, 235, 205);
   opacity: .4;
   z-index: -1;
 }
@@ -140,6 +140,7 @@ h3{
 .contact{
   padding-bottom: 50px;
 }
+
 input,
 textarea{
   width: 100%;
