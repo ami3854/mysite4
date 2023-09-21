@@ -21,10 +21,6 @@ h4{
 }
 
 /* header */
-#header{
-  position: relative;
-}
-
 .header{
   position: fixed;
   inset: 0;
@@ -141,13 +137,38 @@ h3{
   padding-bottom: 50px;
 }
 
+label{
+  padding: 5px;
+}
+
 input,
 textarea{
   width: 100%;
+  padding: 8px;
 }
 
 textarea{
   height: 150px;
+}
+
+button{
+  all: unset;
+  width: 300px;
+  height: 100px;
+  background: rgb(218, 165, 32, .8);
+  box-sizing: border-box;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 100px;
+  transition: all 0.4s ease;
+}
+
+.button{
+  text-align: center;
+}
+
+button:hover{
+  background: rgb(218, 165, 32, .5);
 }
 
 /* footer */
@@ -160,16 +181,31 @@ footer{
   height: 200px;
   line-height: 200px;
   letter-spacing: 0.2rem;
+  margin-top: 100px;
 }
 
 @media (max-width:540px){
   h3{
     padding: 50px 0 !important;
   }
+
+  .request{
+    display: none;
+  }
+}
+
+@media (min-width:540px){
+  .request2{
+    display: none;
+  }
 }
 
 @media (max-width:768px){
   label{
     margin: 5px 0 !important;
+  }
+
+  button{
+    width: 100%;
   }
 }
